@@ -1,5 +1,6 @@
 const menuButton = document.querySelector(".header__toggle");
 const menu = document.querySelector(".header__nav");
+document.documentElement.classList.add("js");
 
 if (menuButton && menu) {
   menuButton.addEventListener("click", () => {
