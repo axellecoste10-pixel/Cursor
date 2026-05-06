@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="L'atelier de Camille, céramique artisanale inspirée de la mer."
+    />
+    <title>L'atelier de Camille</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__brand" href="#">CÉRAMIQUE</a>
+        <button
+          class="header__burger"
+          type="button"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" class="header__nav">
+          <a href="#atelier">L'ATELIER</a>
+          <a href="#creations">LA BOUTIQUE</a>
+          <a href="#contact">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="atelier" class="hero section">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow">DÉCOUVREZ</p>
+            <h1>L’atelier de Camille</h1>
+            <p>
+              Dans un village côtier, Camille façonne à la main des pièces
+              uniques inspirées par la nature et la matière.
+            </p>
+          </div>
+          <div class="hero__media reveal">
+            <img
+              src="assets/mauqtte.png"
+              alt="Vase artisanal devant une mer turquoise"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="creations" class="section intro-note reveal">
+        <div class="container">
+          <p>
+            BOLS, ASSIETTES, SCULPTURES ET OBJETS DÉCORATIFS SONT TOUS
+            LES PIÈCES UNIQUES, CRÉÉES AVEC SOIN DANS UNE DÉMARCHE
+            AUTHENTIQUE ET RESPECTUEUSE DE LA MATIÈRE.
+          </p>
+        </div>
+      </section>
+
+      <section class="section products">
+        <div class="container">
+          <p class="eyebrow">Explorez nos produits</p>
+          <h2 class="reveal">Découvrir les créations</h2>
+          <div class="cards cards--two">
+            <article class="card reveal">
+              <img
+                class="crop crop--s3-left"
+                src="assets/mauqtte.png"
+                alt="Assiettes en céramique aux teintes bleues"
+                loading="lazy"
+              />
+              <h3>Assiettes en céramique</h3>
+              <p>
+                Adaptées aux tendances mais sans compromis sur l’artisanat et
+                la poésie de chaque pièce.
+              </p>
+            </article>
+            <article class="card reveal">
+              <img
+                class="crop crop--s3-right"
+                src="assets/mauqtte.png"
+                alt="Bols en céramique bleu lagon"
+                loading="lazy"
+              />
+              <h3>Bol en céramique</h3>
+              <p>
+                Bols en céramique fabriqués à la main, aux courbes douces et
+                textures lumineuses.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gallery">
+        <div class="container">
+          <h2 class="reveal">Voir la galerie</h2>
+          <p class="gallery__subtitle">Le catalogue de nos pièces</p>
+          <div class="gallery__grid">
+            <img class="reveal crop crop--s4-1" src="assets/mauqtte.png" alt="Plat turquoise en céramique" loading="lazy" />
+            <img class="reveal crop crop--s4-2" src="assets/mauqtte.png" alt="Assortiment de plats ovales" loading="lazy" />
+            <img class="reveal crop crop--s4-3" src="assets/mauqtte.png" alt="Assiette ronde texturée" loading="lazy" />
+            <img class="reveal crop crop--s4-4" src="assets/mauqtte.png" alt="Vase décoratif beige" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section boutique">
+        <div class="container boutique__grid">
+          <img
+            class="crop crop--s5-left reveal"
+            src="assets/mauqtte.png"
+            alt="Portrait de la céramiste dans son atelier"
+            loading="lazy"
+          />
+          <div class="boutique__content reveal">
+            <p class="eyebrow">Expérience</p>
+            <h2>Boutique locale</h2>
+            <p>
+              A travers ses créations, elle affirme l’authenticité d’une
+              approche sensible de la matière.
+            </p>
+            <a class="link-arrow" href="#">Explorer →</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="reveal">Contacter l’atelier de Camille</h2>
+          <p class="contact__about">A propos de</p>
+          <div class="contact__grid">
+            <img class="reveal crop crop--s6-left" src="assets/mauqtte.png" alt="Empilement de bols artisanaux" loading="lazy" />
+            <div class="contact__content reveal">
+              <img class="crop crop--s6-right-top" src="assets/mauqtte.png" alt="Mains modelant un vase en argile" loading="lazy" />
+              <h3>Savoir-faire</h3>
+              <p>
+                De la cuisson lente à la main avec terre et eau, chaque objet
+                révèle un savoir-faire qui perdure.
+              </p>
+              <a class="link-arrow" href="#">Découvrir →</a>
+            </div>
+          </div>
+          <div class="contact__bottom">
+            <div class="reveal">
+              <h3>Horaires</h3>
+              <p>
+                9h00 - 18h30, lundi au samedi.<br />
+                Fermeture le week-end de Pâques et vacances d’été.
+              </p>
+            </div>
+            <div class="reveal">
+              <img class="crop crop--s6-right-bottom" src="assets/mauqtte.png" alt="Bol décoré de glaçure bleu-vert" loading="lazy" />
+              <h3>Coordonnées</h3>
+              <p>
+                15 village des poteries,<br />
+                contact@camilleceramique.fr
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit section">
+        <div class="visit__overlay">
+          <p class="eyebrow">Galerie</p>
+          <h2>Nous rendre visite</h2>
+          <p>Un site simple et poétique pour sublimer l’univers artisanal de Camille.</p>
+          <a class="btn" href="#contact">Contactez nous →</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>Mentions légales</p>
+        <p>L'ATELIER DE CAMILLE</p>
+        <p>&copy; 2026 Atelier de Camille</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
