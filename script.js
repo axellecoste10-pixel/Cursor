@@ -1,38 +1,33 @@
-const burgerButton = document.querySelector(".header__burger");
-const navMenu = document.querySelector(".header__nav");
+const menuButton = document.querySelector(".header__toggle");
+const menu = document.querySelector(".header__nav");
 
-if (burgerButton && navMenu) {
-  burgerButton.addEventListener("click", () => {
-    const expanded = burgerButton.getAttribute("aria-expanded") === "true";
-    burgerButton.setAttribute("aria-expanded", String(!expanded));
-    navMenu.classList.toggle("is-open");
+if (menuButton && menu) {
+  menuButton.addEventListener("click", () => {
+    menu.classList.toggle("is-open");
   });
 
-  navMenu.querySelectorAll("a").forEach((link) => {
+  menu.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      navMenu.classList.remove("is-open");
-      burgerButton.setAttribute("aria-expanded", "false");
+      menu.classList.remove("is-open");
     });
   });
 }
 
-const reveals = document.querySelectorAll(".reveal");
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-      }
-    });
-  },
-  { threshold: 0.14 }
-);
+const sections = document.querySelectorAll(".section-fade");
 
-reveals.forEach((item) => observer.observe(item));
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        }
+      });
+    },
+    { threshold: 0.18 }
+  );
 
-const hero = document.querySelector(".hero__media img");
-window.addEventListener("scroll", () => {
-  if (!hero) return;
-  const y = window.scrollY * 0.06;
-  hero.style.transform = `translateY(${Math.min(y, 20)}px)`;
-});
+  sections.forEach((section) => observer.observe(section));
+} else {
+  sections.forEach((section) => section.classList.add("is-visible"));
+}
